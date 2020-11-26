@@ -27,7 +27,7 @@ public class BaseGui extends JFrame {
                 }catch (Exception e13){
 
                 }
-                new AudioRepeaterUtils(c.GetFromFile("Headset_output"),c.GetFromFile("input"),"").start();
+                new AudioRepeaterUtils(c.GetFromFile("input"),c.GetFromFile("Headset_output"),"").start();
             }
         });
         Headset_Box.addActionListener(new ActionListener() {
@@ -39,8 +39,8 @@ public class BaseGui extends JFrame {
                     Thread.sleep(100);
                 }catch (Exception e13){
                 }
-                new AudioRepeaterUtils(c.GetFromFile("Headset_output"),c.GetFromFile("input"),"").start();
-                new AudioRepeaterUtils(c.GetFromFile("Box_output"),c.GetFromFile("input"),"").start();
+                new AudioRepeaterUtils(c.GetFromFile("input"),c.GetFromFile("Headset_output"),"").start();
+                new AudioRepeaterUtils(c.GetFromFile("input"),c.GetFromFile("Box_output"),"").start();
             }
         });
         Box.addActionListener(new ActionListener() {
@@ -53,7 +53,7 @@ public class BaseGui extends JFrame {
                 }catch (Exception e13){
 
                 }
-                new AudioRepeaterUtils(c.GetFromFile("Box_output"),c.GetFromFile("input"),"").start();
+                new AudioRepeaterUtils(c.GetFromFile("input"),c.GetFromFile("Box_output"),"").start();
             }
         });
     }
